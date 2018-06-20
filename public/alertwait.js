@@ -37,7 +37,9 @@ function plugin_bootstrap_alertwait(){
     PluginWfDom.render(this.bootstrap_modal, document.body);
     $("#alertwait").modal({backdrop: 'static'});
     $('#alertwait').on('shown.bs.modal', function () {
-      callback();
+      if((typeof callback)!='undefined'){
+        callback();
+      }
     })    
   }
   /**
@@ -48,6 +50,3 @@ function plugin_bootstrap_alertwait(){
   }
 }
 var PluginBootstrapAlertwait = new plugin_bootstrap_alertwait();
-
-  
-
