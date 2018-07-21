@@ -18,7 +18,7 @@ function plugin_bootstrap_alertwait(){
                 type: 'div',
                 attribute: {class: 'modal-content', id: 'alertwait_content'},
                 innerHTML: [
-                  {type: 'div', attribute: {class: 'modal-body', id: 'alertwait_body', style: 'text-align:center'}, innerHTML: [{type: 'img', attribute: {src: '/plugin/wf/ajax/loading.gif'}} ]}
+                  {type: 'div', attribute: {class: 'modal-body', id: 'alertwait_body', style: 'text-align:center'}, innerHTML: [{type: 'img', attribute: {src: '/plugin/wf/ajax/loading.gif', 'data-dismiss': 'modal'}} ]}
                 ]
               }
             ]
