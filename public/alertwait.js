@@ -47,6 +47,7 @@ function plugin_bootstrap_alertwait(){
    */
   this.close = function(){
     $("#alertwait").modal('hide');
+    $("#alertwait").remove();
   }
 }
 var PluginBootstrapAlertwait = new plugin_bootstrap_alertwait();
