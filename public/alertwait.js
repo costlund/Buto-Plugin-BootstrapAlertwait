@@ -46,6 +46,15 @@ function plugin_bootstrap_alertwait(){
    * Method to close modal.
    */
   this.close = function(){
+    /**
+     * Fix to remove modal-backdrop because this is not happend when remove.
+     */
+    if(document.getElementById('alertwait')){
+      document.getElementById('alertwait').parentNode.removeChild(document.getElementById('alertwait').nextSibling);
+    }
+    /**
+     * Hide and remove.
+     */
     $("#alertwait").modal('hide');
     $("#alertwait").remove();
   }
