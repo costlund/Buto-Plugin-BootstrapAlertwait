@@ -34,3 +34,10 @@ Close modal.
 ```
 PluginBootstrapAlertwait.close();
 ```
+
+## Check if exist
+```
+if(typeof PluginBootstrapAlertwait!='undefined'){
+  alert('Exist in dom!');
+}
+```
