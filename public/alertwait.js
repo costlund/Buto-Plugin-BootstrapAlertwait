@@ -8,7 +8,7 @@ function plugin_bootstrap_alertwait(){
   this.bootstrap_modal = [
       {
         type: 'div', 
-        attribute: {id: 'alertwait', role: 'dialog', class: 'modal fade', style: 'marginzzz:auto;'}, 
+        attribute: {id: 'alertwait', role: 'dialog', class: 'modal', style: 'marginzzz:auto;'}, 
         innerHTML: [
           {
             type: 'div', 
