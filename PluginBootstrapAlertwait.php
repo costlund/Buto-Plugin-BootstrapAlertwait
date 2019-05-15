@@ -2,7 +2,8 @@
 class PluginBootstrapAlertWait{
   public static function widget_include($data){
     $element = array();
-    $element[] = wfDocument::createHtmlElement('script', null, array('src' => '/plugin/bootstrap/alertwait/alertwait.js', 'type' => 'text/javascript'));
+    wfPlugin::enable('include/js');
+    $element[] = wfDocument::createWidget('include/js', 'include', array('src' => '/plugin/bootstrap/alertwait/alertwait.js'));    
     wfDocument::renderElement($element);
   }
 }

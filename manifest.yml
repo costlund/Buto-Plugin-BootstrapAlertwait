@@ -3,7 +3,10 @@ history:
   '1.0':
     date: '2019-01-23'
     description: 'First version.'
-plugin: {  }
+plugin:
+  -
+    name: include/js
+    version: '1.0'
 sys:
   -
     name: mercury
